@@ -73,8 +73,6 @@ class GalleryTest(unittest.TestCase):
         d(description = 'Search').click()
         # Step 4
         d(resourceId = 'com.intel.android.gallery3d:id/search_src_text').set_text('New Keyword')
-        # confirm searched item
-        assert d(text = 'New Keyword (1)').wait.exists(timeout = 2000)
 
     # Testcase 3
     def testPlaySlideshowWithCineEffect(self):
